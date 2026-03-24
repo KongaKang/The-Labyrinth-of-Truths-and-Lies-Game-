@@ -1,13 +1,11 @@
 /******************************************************************************
 
 The Labyrinth of Truths and Lies Game
-Names: Ethan Sovereign, Donovan Stukes
+Names: Ethan Sovereign, Donovan Stukes, Giovanni Vega
 
 *******************************************************************************/
 #include <iostream>
 using namespace std;
-
-// test code
 
 int main()
 {
