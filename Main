@@ -4,6 +4,17 @@ The Labyrinth of Truths and Lies Game
 Names: Ethan Sovereign, Donovan Stukes, Giovanni Vega, Mohammed Ahmed, Victor Nzekwe
 
 *******************************************************************************/
+
+/******************************************************************************
+For this project each person will need at least one fact concerning themselves.
+We can start with each person listing a fun fact about themselves which may
+be included in a true or false question.
+
+Ethan Sovereign: Ethan Sovereign has gone skydiving (Answer: TRUE)
+
+*******************************************************************************/
+
+
 #include <iostream>
 using namespace std;
 
