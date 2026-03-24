@@ -1,0 +1,15 @@
+/******************************************************************************
+
+The Labyrinth of Truths and Lies Game
+Names: Ethan Sovereign, 
+
+*******************************************************************************/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout << "Hello World";
+
+    return 0;
+}
