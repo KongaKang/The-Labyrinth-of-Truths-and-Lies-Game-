@@ -82,6 +82,10 @@ int main()
 
     };
 
+    /*
+
+    //Example format for questions:
+
     cout << "\n=============================================\n";
     cout << "Two guardians block this path. One tells only truths, the other only lies." << endl;
     cout << "Ask the correct question to determine which path to take forward." << endl;
@@ -100,6 +104,8 @@ int main()
     cout << "\nClaim: questions[6]" << endl;
     cout << "If this statement is true, take the left path. If it is false, take the right path.\n" << endl;
     cout << "Your question options are: \n1. \n2. \n3. " << endl;
+
+    */
 
     return 0;
 }
