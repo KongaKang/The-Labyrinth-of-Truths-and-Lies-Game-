@@ -68,6 +68,8 @@ int main()
   // Store statements (you will use these later in the game)
     vector<string> questions = {
     "Ethan Sovereign has gone skydiving.",
+    "Ethan Sovereign wears glasses.",
+    "Ethan Sovereign has a five food vertial jump.",
     "Donovan Stukes knows how to cook.",
     "Donovan Stukes has met famous rapper Skilla Baby.",
     "Donovan Stukes Is active in the gym.",
@@ -90,12 +92,12 @@ int main()
     cout << "Your question options are: \n1. Has Ethan Sovereign gone skydiving?\n2. Where did Ethan Sovereign go skydiving?\n3. Did Ethan Sovereign survive the fall?" << endl;
 
     //Question 2
-    cout << "\nClaim: questions[1]" << endl;
+    cout << "\nClaim: questions[3]" << endl;
     cout << "If this statement is true, take the left path. If it is false, take the right path.\n" << endl;
     cout << "Your question options are: \n1. What is Donovan Stukes's favorite food to cook?\n2. Did Donovan Stukes cook yesterday?\n3. Does Donovan Stukes know how to cook?" << endl;
 
     //Question 3
-    cout << "\nClaim: questions[5]" << endl;
+    cout << "\nClaim: questions[6]" << endl;
     cout << "If this statement is true, take the left path. If it is false, take the right path.\n" << endl;
     cout << "Your question options are: \n1. \n2. \n3. " << endl;
 
