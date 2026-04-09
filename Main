@@ -107,11 +107,13 @@ int main()
       cout << "\nClaim: claims[currentQuestion]" << endl;
       cout << "Two guardians block this path. One tells only truths, the other only lies." << endl;
       cout << "Your question options are: claims[currentQuestion]" << endl;
+
       cout << "Enter either \" 1 \" \" 2 \" or \" 3 \"";
-      cin >> playerInput;
 
       bool questionRepeat = true;
       while (questionRepeat == true) {
+        cin >> playerInput;
+
         if (playerInput == 1) {
           cout << "" << endl;
           questionRepeat = false;
