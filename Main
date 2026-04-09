@@ -125,15 +125,15 @@ int main()
       while (questionRepeat == true) {
         cin >> playerInput;
 
-        if (playerInput == 1) {
+        if (playerInput == "1") {
           cout << "" << endl;
           questionRepeat = false;
         }
-        else if (playerInput == 2) {
+        else if (playerInput == "2") {
           cout << "" << endl;
           questionRepeat = false;
         }
-        else if (playerInput == 3) {
+        else if (playerInput == "3") {
           cout << "" << endl;
           questionRepeat = false;
         }
