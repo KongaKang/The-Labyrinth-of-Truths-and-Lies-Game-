@@ -67,16 +67,16 @@ int main()
 
   // Store statements (you will use these later in the game)
     vector<string> questions = {
-    "Ethan Sovereign has gone skydiving",
-    "Donovan Stukes knows how to cook",
-    "Donovan Stukes has met famous rapper Skilla Baby",
-    "Donovan Stukes Is active in the gym",
-    "Giovanni Vega has never left the country",
-    "Giovanni Vega has pulled an all-nighter",
-    "Giovanni Vega has fallen asleep in class"
-    "Mohammed Ahmed knows how to swim",
-    "Mohammed Ahmed has played video games for 5 hours straight",
-    "Mohammed Ahmed knows more than 4 languages"
+    "Ethan Sovereign has gone skydiving.",
+    "Donovan Stukes knows how to cook.",
+    "Donovan Stukes has met famous rapper Skilla Baby.",
+    "Donovan Stukes Is active in the gym.",
+    "Giovanni Vega has never left the country.",
+    "Giovanni Vega has pulled an all-nighter.",
+    "Giovanni Vega has fallen asleep in class."
+    "Mohammed Ahmed knows how to swim.",
+    "Mohammed Ahmed has played video games for 5 hours straight.",
+    "Mohammed Ahmed knows more than 4 languages."
 
     };
 
@@ -85,7 +85,7 @@ int main()
     cout << "Ask the correct question to determine which path to take forward." << endl;
 
     //Question 1
-    cout << "\nClaim: Ethan Sovereign has gone skydiving." << endl;
+    cout << "\nClaim: questions[0]" << endl;
     cout << "If this statement is true, take the left path. If it is false, take the right path.\n" << endl;
     cout << "Your question options are: \n1. Has Ethan Sovereign gone skydiving?\n2. Where did Ethan Sovereign go skydiving?\n3. Did Ethan Sovereign survive the fall?" << endl;
 
