@@ -43,7 +43,12 @@ int main()
     cout << " - Mohammed Ahmed\n";
     cout << " - Victor Nzekwe\n\n";
 
-    cout << "Each person has contributed a statement.\n";
+    cout << "Each person has contributed a statement.\n" << endl;
+    cout << "Your task is to access the confidential files hidden within this program." << endl;
+    cout << "In order to accomplish this, you must prove you are a local employee by" << endl;
+    cout << "answering questions related to the personal information of your peers." << endl;
+    cout << "If you can answer enough of the questions correctly, you will be given" << endl;
+    cout << "access to the files you seek.\n" << endl;
     cout << "Your job is to uncover the truth... if you can.\n\n";
 
   // Store statements (you will use these later in the game)
