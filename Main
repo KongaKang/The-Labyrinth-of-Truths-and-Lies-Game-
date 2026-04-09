@@ -51,6 +51,15 @@ int main()
     cout << "access to the files you seek.\n" << endl;
     cout << "Your job is to uncover the truth... if you can.\n\n";
 
+    string beginChoice = "m";
+    cout << "If you understand these rules, enter \" y \" and the task will begin. " << endl;
+    while (beginChoice != "y") {
+      cin >> beginChoice;
+      if (beginChoice != "y") {
+        cout << "To begin the task, enter \" y \" " << endl; 
+      }
+    }
+
   // Store statements (you will use these later in the game)
     vector<string> questions = {
     "Ethan Sovereign has gone skydiving",
@@ -61,6 +70,13 @@ int main()
 
 
     };
+
+    //Question 1
+    cout << "Two guardians block this path. One tells only truths, the other only lies." << endl;
+    cout << "Ask the correct question to determine which path to take forward." << endl;
+    cout << "\nClaim: Ethan Sovereign has gone skydiving." << endl;
+    cout << "If this statement is true, take the left path. If it is false, take the right path." << endl;
+    cout << "Your question options are: \n1. Has Ethan Sovereign gone skydiving?\n2. " << endl;
 
     return 0;
 }
