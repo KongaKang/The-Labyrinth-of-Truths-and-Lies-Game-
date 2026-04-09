@@ -116,7 +116,7 @@ int main()
       cout << "Ask the correct question to determine which path to take forward." << endl;
 
       //Determine which question to ask
-      int currentQuestion = (rand() % (15 - questionCount) + 1);
+      int currentQuestion = (rand() % (15 - questionCount));
 
       //Ask the question
       cout << "\nClaim: " << claims[currentQuestion] << endl;
