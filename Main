@@ -78,9 +78,9 @@ int main()
     "Giovanni Vega has fallen asleep in class."
     "Mohammed Ahmed knows how to swim.",
     "Mohammed Ahmed has played video games for 5 hours straight.",
-    "Mohammed Ahmed knows more than 4 languages."
-    "Victor Nzekwe has watched more than 30 animes."
-    "Victor Nzekwe has a 39 inch verticle jump."
+    "Mohammed Ahmed knows more than 4 languages.",
+    "Victor Nzekwe has watched more than 30 animes.",
+    "Victor Nzekwe has a 39 inch verticle jump.",
     "Victor Nzekwe is Jamaican."
 
     };
@@ -112,7 +112,7 @@ int main()
       cout << "Ask the correct question to determine which path to take forward." << endl;
 
       //Determine which question to ask
-      int currentQuestion = (rand() % 2 + 1);
+      int currentQuestion = (rand() % 12 + 1);
 
       //Ask the question
       cout << "\nClaim: " << claims[currentQuestion] << endl;
