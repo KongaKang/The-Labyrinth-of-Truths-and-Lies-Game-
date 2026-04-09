@@ -123,7 +123,7 @@ int main()
       cout << "Two guardians block this path. One tells only truths, the other only lies." << endl;
       cout << "Your question options are: " << questions[currentQuestion] << endl;
 
-      cout << "Enter either \" 1 \" \" 2 \" or \" 3 \"";
+      cout << "Enter either \" 1 \" \" 2 \" or \" 3 \" ";
 
       bool questionRepeat = true;
       while (questionRepeat == true) {
