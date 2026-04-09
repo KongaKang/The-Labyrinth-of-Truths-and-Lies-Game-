@@ -86,7 +86,18 @@ int main()
     };
 
     vector<string> questions = {
-      "\n1. Has Ethan Sovereign gone skydiving?\n2. Where did Ethan Sovereign go skydiving?\n3. Did Ethan Sovereign survive the fall?"
+      "\n1. Has Ethan Sovereign gone skydiving?\n2. Where did Ethan Sovereign go skydiving?\n3. Did Ethan Sovereign survive the fall?",
+      "\n1. \n2. \n3.",
+      "\n1. \n2. \n3.",
+      "\n1. What is Donovan Stukes's favorite food to cook?\n2. Did Donovan Stukes cook yesterday?\n3. Does Donovan Stukes know how to cook?",
+      "\n1. \n2. \n3.",
+      "\n1. \n2. \n3.",
+      "\n1. \n2. \n3.",
+      "\n1. \n2. \n3.",
+      "\n1. \n2. \n3.",
+      "\n1. \n2. \n3.",
+      "\n1. \n2. \n3.",
+      "\n1. \n2. \n3.",
     };
 
     srand(time(0));
