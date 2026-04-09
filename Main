@@ -103,7 +103,7 @@ int main()
       "\n1. \n2. \n3."
     };
 
-    vector<<string>> answers = {
+    vector<vector<string>> answers = {
       {"Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Mexico.\" Sentinel 2 answers: \"Paraguay.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
       {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
       {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
@@ -119,7 +119,7 @@ int main()
       {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
       {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
       {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
-    }
+    };
 
     srand(time(0));
 
