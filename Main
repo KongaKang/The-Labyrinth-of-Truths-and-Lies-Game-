@@ -101,9 +101,9 @@ int main()
     };
 
     vector<string> claimsVictor = {
-      "Victor Nzekwe has watched more than 30 animes.",
-      "Victor Nzekwe has a 39 inch verticle jump.",
-      "Victor Nzekwe is Jamaican.",
+      "Victor Nzekwe has watched more than 30 animes.",//TRUE
+      "Victor Nzekwe has a 39 inch verticle jump.",//FALSE
+      "Victor Nzekwe is Nigerian.",//TRUE
     };
 
     vector<string> claimsNithin = {
