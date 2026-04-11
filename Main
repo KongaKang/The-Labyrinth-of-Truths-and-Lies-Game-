@@ -14,8 +14,8 @@ Ethan Sovereign: Ethan Sovereign has gone skydiving (Answer: TRUE)
 Ethan Sovereign: Ethan Sovereign wears glasses (Answer: TRUE)
 Ethan Sovereign: Ethan Sovereign has a five food vertial jump (Answer: FALSE)
 
-Donovan Stukes: Donovan Stukes knows how to cook (Answer: False)
-Donovan Stukes: Donovan Stukes has met famous rapper Skilla Baby (Answer:True)
+Donovan Stukes: Donovan Stukes knows how to cook (Answer: FALSE)
+Donovan Stukes: Donovan Stukes has met famous rapper Skilla Baby (Answer:TRUE)
 Donovan Stukes: Donovan Stukes Is active in the gym (Answer:True)
 
 Giovanni Vega: Giovanni Vega has never left the country (Answer: False)
@@ -26,9 +26,9 @@ Mohammed Ahmed: Mohammed Ahmed knows how to swim (Answer: FALSE)
 Mohammed Ahmed: Mohammed Ahmed has played video games for 5 hours straight (Answer: TRUE)
 Mohammed Ahmed: Mohammed Ahmed knows more than 4 languages (Answer: TRUE)
 
-Kenny Chanya is part of a dance club. (Answer: True)
-Kenny Chanya is a twitch streamer (Answer: True)
-Kenny Chanya has gotten into a car accident before (Answer: False)
+Kenny Chanya is part of a dance club. (Answer: TRUE)
+Kenny Chanya is a twitch streamer (Answer: TRUE)
+Kenny Chanya has gotten into a car accident before (Answer: FALSE)
 *******************************************************************************/
 
 
@@ -196,7 +196,10 @@ int main()
       //Give the player the initial prompt
       cout << "\n=============================================\n";
       cout << "Two guardians block this path. One tells only truths, the other only lies." << endl;
-      cout << "Ask the correct question to determine which path to take forward." << endl;
+      cout << "The sentinels will only answer questions related to the given claim." << endl;
+      cout << "To prove you know this team well enough to gain access to the hidden files," << endl;
+      cout << "choose the sentinel which tells the truth." << endl;
+      cout << "\n=============================================\n";
 
       //Determine which question to ask
       int currentQuestion = (rand() % (3));
