@@ -79,7 +79,7 @@ int main()
     vector<string> claimsEthan = {
     "Ethan Sovereign has gone skydiving.", // TRUE
     "Ethan Sovereign wears glasses.", // TRUE
-    "Ethan Sovereign can do a double backflip.",
+    "Ethan Sovereign can do a double backflip.", // FALSE
     };
 
     vector<string> claimsDonovan = {
@@ -129,43 +129,43 @@ int main()
     vector<string> questionsEthan = {
       "\n1. Has Ethan Sovereign gone skydiving?\n2. Where did Ethan Sovereign go skydiving?\n3. Did Ethan Sovereign survive the fall?",
       "\n1. Did Ethan Sovereign wear glasses yesterday?\n2. Does Ethan Sovereign wear glasses?\n3. Does he wear his glasses on his wrist?",
-      "\n1. Can Ethan Sovereign do an octuple backflip as well?\n2. Did Ethan Sovereign do a double backflip yesterday?\n3. Can Ethan Sovereign do a double backflip?",
+      "\n1. Can Ethan Sovereign do an octuple backflip as well?\n2. Did Ethan Sovereign do a double backflip yesterday?\n3. Can Ethan Sovereign do a double backflip?"
     };
 
     vector<string> questionsDonovan = {
       "\n1. What is Donovan Stukes's favorite food to cook?\n2. Did Donovan Stukes cook yesterday?\n3. Does Donovan Stukes know how to cook?",
-      "\n1. \n2. \n3.",
-      "\n1. \n2. \n3.",
+      "\n1. Did Donovan Stukes meet the famous rapper Skilla Baby?\n2. Did Skilla Baby perform a double mastectomy when Donovan Stukes met him?\n3. Did Donovan Stukes think Skilla Baby was cool?",
+      "\n1. Did Donovan Stukes bench two thousand pounds last time he was at the gym?\n2. Does Donovan Stukes enjoy going to the gym?\n3. Is Donovan Stukes active in the gym?"
     };
 
     vector<string> questionsGiovanni = {
       "\n1. Has Giovanni ever left the country?\n2. Which country has Giovanni visited?\n3. Has Giovanni Vega ever been on an airplane?",
       "\n1. Has Giovanni pulled an all-nighter?\n2. What was Giovanni doing during it?\n3. How many all-nighters has Giovanni pulled?",
-      "\n1. Has Giovanni fallen asleep in class?\n2. Which class did Giovanni fall asleep in?\n3. Did a teacher ever wake Giovanni up?",
+      "\n1. Has Giovanni fallen asleep in class?\n2. Which class did Giovanni fall asleep in?\n3. Did a teacher ever wake Giovanni up?"
     };
 
     vector<string> questionsMohammed = {
       "\n1. \n2. \n3.",
       "\n1. \n2. \n3.",
-      "\n1. \n2. \n3.",
+      "\n1. \n2. \n3."
     };
 
     vector<string> questionsVictor = {
       "\n1. \n2. \n3.",
       "\n1. \n2. \n3.",
-      "\n1. \n2. \n3.",
+      "\n1. \n2. \n3."
     };
 
     vector<string> questionsNithin = {
       "\n1. \n2. \n3.",
       "\n1. \n2. \n3.",
-      "\n1. \n2. \n3.",
+      "\n1. \n2. \n3."
     };
 
     vector<string> questionsBraylen = {
       "\n1. \n2. \n3.",
       "\n1. \n2. \n3.",
-      "\n1. \n2. \n3.",
+      "\n1. \n2. \n3."
     };
 
     vector<string> questionsKenny = {
@@ -184,8 +184,8 @@ int main()
 
     vector<vector<string>> answersDonovan = {
       {"\nSentinel 1 answers: \"Donovan has no favorite food to cook.\" Sentinel 2 answers: \"Jambalaya.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
-      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
-      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
+      {"\nSentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
     };
 
     vector<vector<string>> answersGiovanni = {
