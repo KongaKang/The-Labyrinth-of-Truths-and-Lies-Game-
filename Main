@@ -31,6 +31,8 @@ Mohammed Ahmed: Mohammed Ahmed knows more than 4 languages (Answer: TRUE)
 #include <iostream>
 #include <vector>
 #include <string>
+#include <ctime>
+#include <cstdlib>
 using namespace std;
 
 int main()
@@ -110,7 +112,7 @@ int main()
       {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
       {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
       {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
-      {"Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No .\"", "Sentinel 1 answers: \"Mexico.\" Sentinel 2 answers: \"Canada.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
+      {"Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No .\"", "Sentinel 1 answers: \"Mexico.\" Sentinel 2 answers: \"He has not visited any.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
       {"Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Studying.\" Sentinel 2 answers: \"Gaming.\"", "Sentinel 1 answers: \"3.\" Sentinel 2 answers: \"0.\""},
       {"Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"History.\" Sentinel 2 answers: \"Math.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
       {"Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
@@ -126,15 +128,16 @@ int main()
     int playerScore = 0;
     int questionCount = 0;
     string playerInput = "0";
+    int totalClaims = 15;
 
-    while (playerScore < 6) {
+    while (playerScore < 6 && questionCount < totalClaims) {
       //Give the player the initial prompt
       cout << "\n=============================================\n";
       cout << "Two guardians block this path. One tells only truths, the other only lies." << endl;
       cout << "Ask the correct question to determine which path to take forward." << endl;
 
       //Determine which question to ask
-      int currentQuestion = (rand() % (15 - questionCount));
+      int currentQuestion = (rand() % (totalClaims - questionCount));
 
       //Ask the question
       cout << "\nClaim: " << claims[currentQuestion] << endl;
@@ -169,8 +172,19 @@ int main()
         else {
           cout << "Please enter either 1, 2 or 3." << endl;
         }
+        
       }
-    }
+      cout << "\n=============================================\n";
+      if (playerScore >= 6) {
+        cout << "ACCESS GRANTED!\n";
+        cout << "You have retrieved the confidential files!\n";
+      }   else {
+        cout << "ACCESS DENIED.\n";
+        cout << "You did not answer enough questions correctly.\n";
+      }
+      cout << "Final score: " << playerScore << " correct out of " << questionCount << " questions.\n";
+      cout << "=============================================\n";
+      }
 
     /*
 
