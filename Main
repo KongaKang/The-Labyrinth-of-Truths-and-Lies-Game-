@@ -53,6 +53,8 @@ int main()
     cout << " - Giovanni Vega\n";
     cout << " - Mohammed Ahmed\n";
     cout << " - Victor Nzekwe\n";
+    cout << " - Nithin Suresh\n";
+    cout << " - Braylen T\n";
     cout << " - Kenny Chanya\n\n";
 
     cout << "Each person has contributed a statement.\n" << endl;
@@ -104,6 +106,18 @@ int main()
       "Victor Nzekwe is Jamaican.",
     };
 
+    vector<string> claimsNithin = {
+      "",
+      "",
+      ""
+    };
+
+    vector<string> claimsBraylen = {
+      "",
+      "",
+      ""
+    };
+
     vector<string> claimsKenny = {
       "Kenny Chanya is part of a dance club.", // TRUE
       "Kenny Chanya is a twitch streamer", // TRUE
@@ -142,6 +156,18 @@ int main()
       "\n1. \n2. \n3.",
     };
 
+    vector<string> questionsNithin = {
+      "\n1. \n2. \n3.",
+      "\n1. \n2. \n3.",
+      "\n1. \n2. \n3.",
+    };
+
+    vector<string> questionsBraylen = {
+      "\n1. \n2. \n3.",
+      "\n1. \n2. \n3.",
+      "\n1. \n2. \n3.",
+    };
+
     vector<string> questionsKenny = {
       "\n1. What kind of dancing does Kenny do?\n2. Does he like dancing?\n3. How often does he dance?",
       "\n1. What does Kenny stream?\n2. How entertaining is Kenny?\n3. Does Kenny like making content?",
@@ -157,7 +183,7 @@ int main()
     };
 
     vector<vector<string>> answersDonovan = {
-      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+      {"\nSentinel 1 answers: \"Donovan has no favorite food to cook.\" Sentinel 2 answers: \"Jambalaya.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
       {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
       {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
     };
@@ -179,6 +205,18 @@ int main()
       {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
       {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
     };
+
+    vector<vector<string>> answersNithin = {
+      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+    }
+
+    vector<vector<string>> answersBraylen = {
+      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+    }
 
     vector<vector<string>> answersKenny = {
       {"\nSentinel 1 answers: \"HipHop.\" Sentinel 2 answers: \"Breakdance.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"Every now and then.\" Sentinel 2 answers: \"Everyday.\""},
