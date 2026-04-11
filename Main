@@ -206,7 +206,7 @@ int main()
 
         //Ask the question
         cout << "\nClaim: " << claimsEthan[currentQuestion] << endl;
-        cout << "Two guardians block this path. One tells only truths, the other only lies." << endl;
+        cout << "\nTwo guardians block this path. One tells only truths, the other only lies.\nThey will only answer questions related to the claim above.\n" << endl;
         cout << "Your question options are: " << questionsEthan[currentQuestion] << endl;
 
         cout << "Enter either \" 1 \" \" 2 \" or \" 3 \" ";
