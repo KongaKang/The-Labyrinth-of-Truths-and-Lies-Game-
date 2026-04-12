@@ -650,7 +650,7 @@ int main()
 
       // Give player final score
       cout << "\n=============================================\n";
-      if (playerScore >= 8) {
+      if (playerScore >= 6) {
         cout << "ACCESS GRANTED!\n";
         cout << "You have retrieved the confidential files!\n";
       }   else {
