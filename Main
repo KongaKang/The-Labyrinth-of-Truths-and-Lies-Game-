@@ -151,9 +151,9 @@ int main()
     };
 
     vector<string> questionsVictor = {
-      "\n1. \n2. \n3.",
-      "\n1. \n2. \n3.",
-      "\n1. \n2. \n3."
+      "\n1. Does Victor Nzekwe have a Crunchyroll subscription?\n2. What is Victor Nzekwes favorite anime?\n3. Has Victor Nzekwe ever finished and anime in one day?",
+      "\n1. Does Victor Nzekwe work on his verticle jump?\n2. Does Victor Nzekwe play sports?\n3. Has Victor Nzekwe ever had his verticle jump measured?",
+      "\n1. Has Victor Nzekwe ever gone to Nigeria?\n2. Does Victor Nzekwe speak and nigerian language?\n3. Does Victor Nzekwe dance any native nigerian dances?"
     };
 
     vector<string> questionsNithin = {
