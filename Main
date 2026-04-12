@@ -29,17 +29,14 @@ Mohammed Ahmed: Mohammed Ahmed knows more than 4 languages (Answer: TRUE)
 Kenny Chanya is part of a dance club. (Answer: TRUE)
 Kenny Chanya is a twitch streamer (Answer: TRUE)
 Kenny Chanya has gotten into a car accident before (Answer: FALSE)
-<<<<<<< HEAD
 
 Braylen T: Braylen T has traveled out of the country (Answer: FALSE)
 Braylen T: Braylen T has been to multiple concerts (Answer: TRUE)
 Braylen T: Braylen T is the youngest sibling in his family (Answer: TRUE)
-=======
 
 Nithin Suresh loves to go swimming. (Answer: TRUE)
 Nithin Suresh plays elden ring (Answer: TRUE)
 Nithin Suresh ran a marathon. (Answer: FALSE)
->>>>>>> 9bc9da110895e14c97fb89864c3c7a28e8981f9d
 *******************************************************************************/
 
 
@@ -639,7 +636,7 @@ int main()
         }
 
         // Ask the player for an input to continue the path
-        if (playerScore < 6 && questionCount < 6) {
+        if (playerScore < 8 && questionCount < 8) {
           string continueInput = "q";
           cout << "\nEnter \" c \" to continue the path ";
           while (continueInput != "c") {
@@ -653,7 +650,7 @@ int main()
 
       // Give player final score
       cout << "\n=============================================\n";
-      if (playerScore >= 6) {
+      if (playerScore >= 8) {
         cout << "ACCESS GRANTED!\n";
         cout << "You have retrieved the confidential files!\n";
       }   else {
