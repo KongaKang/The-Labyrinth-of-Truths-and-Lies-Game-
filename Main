@@ -29,10 +29,17 @@ Mohammed Ahmed: Mohammed Ahmed knows more than 4 languages (Answer: TRUE)
 Kenny Chanya is part of a dance club. (Answer: TRUE)
 Kenny Chanya is a twitch streamer (Answer: TRUE)
 Kenny Chanya has gotten into a car accident before (Answer: FALSE)
+<<<<<<< HEAD
+
+Braylen T: Braylen T has traveled out of the country (Answer: FALSE)
+Braylen T: Braylen T has been to multiple concerts (Answer: TRUE)
+Braylen T: Braylen T is the youngest sibling in his family (Answer: TRUE)
+=======
 
 Nithin Suresh loves to go swimming. (Answer: TRUE)
 Nithin Suresh plays elden ring (Answer: TRUE)
 Nithin Suresh ran a marathon. (Answer: FALSE)
+>>>>>>> 9bc9da110895e14c97fb89864c3c7a28e8981f9d
 *******************************************************************************/
 
 
@@ -117,9 +124,9 @@ int main()
     };
 
     vector<string> claimsBraylen = {
-      "",
-      "",
-      ""
+      "Braylen T has traveled out of the country.",
+      "Braylen T has been to multiple concerts.",
+      "Braylen T is the youngest sibling in his family."
     };
 
     vector<string> claimsKenny = {
@@ -167,9 +174,9 @@ int main()
     };
 
     vector<string> questionsBraylen = {
-      "\n1. \n2. \n3.",
-      "\n1. \n2. \n3.",
-      "\n1. \n2. \n3."
+      "\n1. Has Braylen T ever been on a plane?\n2. Has Braylen T ever had a foreign meal?\n3. Has Braylen T traveled out of the country?",
+      "\n1. What was the first concert Braylen T went to?\n2. Does Braylen T enjoy live music?\n3. Has Braylen T been to multiple concerts?",
+      "\n1. Does Braylen T have older siblings?\n2. How many siblings does Braylen T have?\n3. Is Braylen T the youngest sibling in his family?"
     };
 
     vector<string> questionsKenny = {
@@ -217,9 +224,9 @@ int main()
     };
 
     vector<vector<string>> answersBraylen = {
-      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
-      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
-      {"\nSentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\"", "Sentinel 1 answers: \" .\" Sentinel 2 answers: \" .\""},
+      {"\nSentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\"", "Sentinel 1 answers: \"He has not, he has never left the country.\" Sentinel 2 answers: \"He has tried many.\"", "Sentinel 1 answers: \"No.\" Sentinel 2 answers: \"Yes.\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"He prefers outdoor.\" Sentinel 2 answers: \"He prefers indoor.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
+      {"\nSentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\"", "Sentinel 1 answers: \"He has older siblings above him.\" Sentinel 2 answers: \"He has younger siblings below him.\"", "Sentinel 1 answers: \"Yes.\" Sentinel 2 answers: \"No.\""},
     };
 
     vector<vector<string>> answersKenny = {
@@ -234,7 +241,7 @@ int main()
     int questionCount = 0;
     string playerInput = "0";
 
-    while (playerScore < 7 && questionCount < 7) {
+    while (playerScore < 8 && questionCount < 8) {
       //Give the player the initial prompt
       cout << "\n=============================================\n";
       cout << "Two guardians block this path. One tells only truths, the other only lies." << endl;
@@ -520,6 +527,61 @@ int main()
             }
           }
         }
+        else if (questionCount == 5) {
+        //Braylen's segment
+        //Ask the question
+        cout << "\nClaim: " << claimsBraylen[currentQuestion] << endl;
+        cout << "\nTwo guardians block this path. One tells only truths, the other only lies.\nThey will only answer questions related to the claim above.\n" << endl;
+        cout << "Your question options are: " << questionsBraylen[currentQuestion] << endl;
+
+        cout << "Enter either \" 1 \" \" 2 \" or \" 3 \" ";
+
+        //Give the player answers
+        bool questionRepeat = true;
+        while (questionRepeat == true) {
+          cin >> playerInput;
+
+          if (playerInput == "1") {
+            cout << answersBraylen[currentQuestion][0] << endl;
+            questionRepeat = false;
+            questionCount += 1;
+          }
+          else if (playerInput == "2") {
+            cout << answersBraylen[currentQuestion][1] << endl;
+            questionRepeat = false;
+            questionCount += 1;
+          }
+          else if (playerInput == "3") {
+            cout << answersBraylen[currentQuestion][2] << endl;
+            questionRepeat = false;
+            questionCount += 1;
+          }
+          else {
+            cout << "Please enter either 1, 2 or 3." << endl;
+          }
+        }
+
+          //Give the player the option to choose which path to take
+          cout << "\nNow, choose which sentinel has told the truth (1 or 2)." << endl;
+          bool pathRepeat = true;
+          while (pathRepeat == true) {
+            cin >> playerInput;
+
+            if (playerInput == "1") {
+              playerScore += 1;
+              cout << "You have chosen correctly. Your current score is: " << playerScore << endl;
+              pathRepeat = false;
+            }
+            else if (playerInput == "2") {
+              cout << "You have chosen incorrectly. Your current score is: " << playerScore << endl;
+              pathRepeat = false;
+            }
+            else {
+              cout << "Please enter either 1 or 2." << endl;
+            }
+          }
+        }
+        
 
         else {
         //Kenny's segment
